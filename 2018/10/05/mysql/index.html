@@ -6,23 +6,25 @@
     
 
     
-    <title>Hello World | Cocktail</title>
+    <title>mysql 8.0的一些新特性及踩坑点 | Cocktail</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="前段时间电脑出现了一些问题，导致重装了系统作为一名软件开发者，重装了系统，必然要重新安装各种常用环境，这一点着实令人头疼。准备装mysql的时候意外地发现mysql更新到了8.0，搜了一下相关资料，简单来说mysql8.0较之前的版本在性能上有了很大的提升，另外加强了一些扩展  mysql8.0新特性： 性能：MySQL 8.0 的速度要比 MySQL 5.7 快 2 倍。MySQL 8.0 在以">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/10/05/hello-world/index.html">
+<meta property="og:title" content="mysql 8.0的一些新特性及踩坑点">
+<meta property="og:url" content="http://yoursite.com/2018/10/05/mysql/index.html">
 <meta property="og:site_name" content="Cocktail">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前段时间电脑出现了一些问题，导致重装了系统作为一名软件开发者，重装了系统，必然要重新安装各种常用环境，这一点着实令人头疼。准备装mysql的时候意外地发现mysql更新到了8.0，搜了一下相关资料，简单来说mysql8.0较之前的版本在性能上有了很大的提升，另外加强了一些扩展  mysql8.0新特性： 性能：MySQL 8.0 的速度要比 MySQL 5.7 快 2 倍。MySQL 8.0 在以">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-05T12:52:53.999Z">
+<meta property="og:image" content="http://yoursite.com/2018/10/05/mysql/33.jpg">
+<meta property="og:updated_time" content="2018-10-05T17:11:53.344Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="mysql 8.0的一些新特性及踩坑点">
+<meta name="twitter:description" content="前段时间电脑出现了一些问题，导致重装了系统作为一名软件开发者，重装了系统，必然要重新安装各种常用环境，这一点着实令人头疼。准备装mysql的时候意外地发现mysql更新到了8.0，搜了一下相关资料，简单来说mysql8.0较之前的版本在性能上有了很大的提升，另外加强了一些扩展  mysql8.0新特性： 性能：MySQL 8.0 的速度要比 MySQL 5.7 快 2 倍。MySQL 8.0 在以">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/05/mysql/33.jpg">
     
 
     
@@ -142,14 +144,14 @@
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-hello-world" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-mysql" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Hello World
+        mysql 8.0的一些新特性及踩坑点
         </h1>
     
 
@@ -159,8 +161,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/10/05/hello-world/" class="article-date">
-            <time datetime="2018-10-05T12:52:53.999Z" itemprop="datePublished">2018-10-05</time>
+        <a href="/2018/10/05/mysql/" class="article-date">
+            <time datetime="2018-10-05T14:09:04.000Z" itemprop="datePublished">2018-10-05</time>
         </a>
     </div>
 
@@ -171,15 +173,47 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <p>前段时间电脑出现了一些问题，导致重装了系统<br>作为一名软件开发者，重装了系统，必然要重新安装各种常用环境，这一点着实令人头疼。<br>准备装mysql的时候意外地发现mysql更新到了8.0，搜了一下相关资料，<br>简单来说mysql8.0较之前的版本在性能上有了很大的提升，另外加强了一些扩展<br> <img src="/2018/10/05/mysql/33.jpg" alt="mysql8.0"></p>
+<h2 id="mysql8-0新特性："><a href="#mysql8-0新特性：" class="headerlink" title="mysql8.0新特性："></a>mysql8.0新特性：</h2><ol>
+<li>性能：MySQL 8.0 的速度要比 MySQL 5.7 快 2 倍。MySQL 8.0 在以下方面带来了更好的性能：读/写工作负载、IO 密集型工作负载、以及高竞争（”hot spot”热点竞争问题）工作负载。<br><img src="/2018/10/05/mysql/11.png" alt=""></li>
+<li>NoSQL：MySQL 从 5.7 版本开始提供 NoSQL 存储功能，目前在 8.0 版本中这部分功能也得到了更大的改进。该项功能消除了对独立的 NoSQL 文档数据库的需求，而 MySQL 文档存储也为 schema-less 模式的 JSON 文档提供了多文档事务支持和完整的 ACID 合规性。<br><img src="/2018/10/05/mysql/22.png" alt=""></li>
+<li><p>窗口函数(Window Functions)：从 MySQL 8.0 开始，新增了一个叫窗口函数的概念，它可以用来实现若干新的查询方式。窗口函数与 SUM()、COUNT() 这种集合函数类似，但它不会将多行查询结果合并为一行，而是将结果放回多行当中。即窗口函数不需要 GROUP BY。</p>
+</li>
+<li><p>隐藏索引：在 MySQL 8.0 中，索引可以被“隐藏”和“显示”。当对索引进行隐藏时，它不会被查询优化器所使用。我们可以使用这个特性用于性能调试，例如我们先隐藏一个索引，然后观察其对数据库的影响。如果数据库性能有所下降，说明这个索引是有用的，然后将其“恢复显示”即可；如果数据库性能看不出变化，说明这个索引是多余的，可以考虑删掉。</p>
+</li>
+<li><p>降序索引：MySQL 8.0 为索引提供按降序方式进行排序的支持，在这种索引中的值也会按降序的方式进行排序。</p>
+</li>
+<li><p>通用表表达式(Common Table Expressions CTE)：在复杂的查询中使用嵌入式表时，使用 CTE 使得查询语句更清晰。</p>
+</li>
+<li><p>UTF-8 编码：从 MySQL 8 开始，使用 utf8mb4 作为 MySQL 的默认字符集。</p>
+</li>
+<li><p>JSON：MySQL 8 大幅改进了对 JSON 的支持，添加了基于路径查询参数从 JSON 字段中抽取数据的 JSON_EXTRACT() 函数，以及用于将数据分别组合到 JSON 数组和对象中的 JSON_ARRAYAGG() 和 JSON_OBJECTAGG() 聚合函数。</p>
+</li>
+<li><p>可靠性：InnoDB 现在支持表 DDL 的原子性，也就是 InnoDB 表上的 DDL 也可以实现事务完整性，要么失败回滚，要么成功提交，不至于出现 DDL 时部分成功的问题，此外还支持 crash-safe 特性，元数据存储在单个事务数据字典中。</p>
+</li>
+<li><p>高可用性(High Availability)：InnoDB 集群为您的数据库提供集成的原生 HA 解决方案。</p>
+</li>
+<li><p>安全性：对 OpenSSL 的改进、新的默认身份验证、SQL 角色、密码强度、授权。</p>
+</li>
+</ol>
+<h5 id="看到8-0版本的mysql这么强大，当然选择装它啦，安装过程较之前版本没有很大的改动，网上教程也很多，这边就不赘述了"><a href="#看到8-0版本的mysql这么强大，当然选择装它啦，安装过程较之前版本没有很大的改动，网上教程也很多，这边就不赘述了" class="headerlink" title="看到8.0版本的mysql这么强大，当然选择装它啦，安装过程较之前版本没有很大的改动，网上教程也很多，这边就不赘述了"></a>看到8.0版本的mysql这么强大，当然选择装它啦，安装过程较之前版本没有很大的改动，网上教程也很多，这边就不赘述了</h5><p>然后这个mysql作为一个船新版本，坑也是有的，如果按照之前的方法配置可能会出一些问题，接下来就总结一些常见踩坑点，帮助大家更好地使用</p>
+<h2 id="Mysql8-0的一些常见问题"><a href="#Mysql8-0的一些常见问题" class="headerlink" title="Mysql8.0的一些常见问题"></a>Mysql8.0的一些常见问题</h2><ol>
+<li>jar包未更新<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Loading <span class="class"><span class="keyword">class</span> <span class="title">com</span>.<span class="title">mysql</span>.<span class="title">jdbc</span>.<span class="title">Driver</span>. </span></span><br><span class="line"><span class="class"><span class="title">This</span> <span class="title">is</span> <span class="title">deprecated</span>. <span class="title">The</span> <span class="title">new</span> <span class="title">driver</span> <span class="title">class</span> <span class="title">is</span> </span></span><br><span class="line"><span class="class"><span class="title">com</span>.<span class="title">mysql</span>.<span class="title">cj</span>.<span class="title">jdbc</span>.<span class="title">Driver</span>. <span class="title">The</span> <span class="title">driver</span> <span class="title">is</span> <span class="title">automatically</span> <span class="title">registered</span> <span class="title">via</span> <span class="title">the</span> <span class="title">SPI</span> <span class="title">and</span> <span class="title">manual</span> <span class="title">loading</span> <span class="title">of</span> <span class="title">the</span> <span class="title">driver</span> <span class="title">class</span> <span class="title">is</span> <span class="title">generally</span> <span class="title">unnecessary</span>.</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>解决方法：<br>MySQL 8.0不能用老版的com.mysql.jdbc.Driver驱动了，需要换成<code>mysql-connector-java-8.0.11.jar</code>包中的<code>com.mysql.cj.jdbc.Driver</code>新版驱动<br>下载一个新版jar包替换即可</p>
+<ol start="2">
+<li>时区未设置正确<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java.sql.SQLException: The server time zone value ‘???ú±ê×??±??’ is unrecognized or represents more than one time zone.</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>解决方法：<br>系统时区与数据库时区差异导致解析为空，需要使用gmt+8时区<br>这里附上我的jdbc设置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jdbc.url = jdbc:mysql:<span class="comment">//localhost:3306/table?</span></span><br><span class="line">useUnicode=<span class="literal">true</span>&amp;useSSL=<span class="literal">false</span>&amp;characterEncoding=utf<span class="number">-8</span>&amp;serverTimezone=GMT%<span class="number">2</span>B8</span><br></pre></td></tr></table></figure></p>
+<p>另外，jdbc的设置更改之后，有些配置文件也需要修改，例如我的一个基于ssm的项目，jdbc更改之后需要在application.xml文件中同步修改</p>
+<ol start="3">
+<li>数据库表名不可设置为ADMIN<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1064</span> - You have an error <span class="keyword">in</span> your SQL syntax; check the manual that corresponds to your MySQL server version <span class="keyword">for</span> the right syntax to use near <span class="string">'ADMIN'</span> at line <span class="number">1</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>解决方法：Mysql8.0不允许数据库表名为ADMIN，修改表名即可</p>
+<h4 id="以上就是关于Mysql8-0的一些介绍及踩坑点解释，希望大家在使用过程中都可以顺利"><a href="#以上就是关于Mysql8-0的一些介绍及踩坑点解释，希望大家在使用过程中都可以顺利" class="headerlink" title="以上就是关于Mysql8.0的一些介绍及踩坑点解释，希望大家在使用过程中都可以顺利"></a>以上就是关于Mysql8.0的一些介绍及踩坑点解释，希望大家在使用过程中都可以顺利</h4><p>新特性说明引用自<a href="https://www.oschina.net/news/95325/mysql-8-0-ga-released?appinstall=0/" target="_blank" rel="noopener">开源中国</a></p>
 
         </div>
         <footer class="article-footer">
@@ -187,7 +221,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2018/10/05/hello-world/" data-id="cjmwj0xwm0000gktcy1rn6ukq" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2018/10/05/mysql/" data-id="cjmwj0xwv0001gktc2rxkv99a" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -301,16 +335,12 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/10/05/mysql/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            mysql 8.0的一些新特性及踩坑点
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
+        <a href="/2018/10/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Hello World</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
     
 </nav>
 
@@ -452,7 +482,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://yoursite.com/2018/10/05/hello-world/';
+    var disqus_url = 'http://yoursite.com/2018/10/05/mysql/';
     
     (function() {
     var dsq = document.createElement('script');
