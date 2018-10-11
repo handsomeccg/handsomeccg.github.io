@@ -12,17 +12,19 @@
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="简介线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。 线程池线程池的作用：线程池作用就是限制系统中执行线程的数量。     根据系统的">
+    <meta name="description" content="简介线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。 线程池线程池的作用：线程池作用就是限制系统中执行线程的数量。     根据系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java线程池的使用说明">
 <meta property="og:url" content="http://yoursite.com/2018/10/10/Java线程池的使用说明/index.html">
 <meta property="og:site_name" content="Cocktail">
-<meta property="og:description" content="简介线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。 线程池线程池的作用：线程池作用就是限制系统中执行线程的数量。     根据系统的">
+<meta property="og:description" content="简介线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。 线程池线程池的作用：线程池作用就是限制系统中执行线程的数量。     根据系统">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-10T02:44:57.084Z">
+<meta property="og:image" content="http://yoursite.com/2018/10/10/Java线程池的使用说明/11.jpg">
+<meta property="og:updated_time" content="2018-10-11T09:54:44.927Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java线程池的使用说明">
-<meta name="twitter:description" content="简介线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。 线程池线程池的作用：线程池作用就是限制系统中执行线程的数量。     根据系统的">
+<meta name="twitter:description" content="简介线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。 线程池线程池的作用：线程池作用就是限制系统中执行线程的数量。     根据系统">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/10/Java线程池的使用说明/11.jpg">
     
 
     
@@ -171,7 +173,8 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。</p>
+            <p><img src="/2018/10/10/Java线程池的使用说明/11.jpg" alt="Java线程池"></p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>线程的使用在java中占有极其重要的地位，在jdk1.4极其之前的jdk版本中，关于线程池的使用是极其简陋的。在jdk1.5之后这一情况有了很大的改观。Jdk1.5之后加入了java.util.concurrent包，这个包中主要介绍java中线程以及线程池的使用。为我们在开发中处理线程的问题提供了非常大的帮助。</p>
 <h1 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h1><h4 id="线程池的作用："><a href="#线程池的作用：" class="headerlink" title="线程池的作用："></a>线程池的作用：</h4><p>线程池作用就是限制系统中执行线程的数量。<br>     根据系统的环境情况，可以自动或手动设置线程数量，达到运行的最佳效果；少了浪费了系统资源，多了造成系统拥挤效率不高。用线程池控制线程数量，其他线程排队等候。一个任务执行完毕，再从队列的中取最前面的任务开始执行。若队列中没有等待进程，线程池的这一资源处于等待。当一个新任务需要运行时，如果线程池中有等待的工作线程，就可以开始运行了；否则进入等待队列。</p>
 <h4 id="为什么要用线程池"><a href="#为什么要用线程池" class="headerlink" title="为什么要用线程池:"></a>为什么要用线程池:</h4><p>1.减少了创建和销毁线程的次数，每个工作线程都可以被重复利用，可执行多个任务。</p>
 <p>2.可以根据系统的承受能力，调整线程池中工作线线程的数目，防止因为消耗过多的内存，而把服务器累趴下(每个线程需要大约1MB内存，线程开的越多，消耗的内存也就越大，最后死机)。</p>
@@ -232,7 +235,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2018/10/10/Java线程池的使用说明/" data-id="cjn2japvw0000yctckkw4g8ou" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2018/10/10/Java线程池的使用说明/" data-id="cjn4p4znp0001zgtchzoodjj5" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -346,6 +349,16 @@
         
 <nav id="article-nav">
     
+        <a href="/2018/10/11/java经典设计模式/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            java经典设计模式
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/2018/10/05/mysql/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">上一篇</strong>
@@ -371,10 +384,30 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/10/11/java经典设计模式/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/10/11/java经典设计模式/11.jpg)" alt="java经典设计模式" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/10/11/java经典设计模式/" class="title">java经典设计模式</a></p>
+                            <p class="item-date"><time datetime="2018-10-11T06:31:58.000Z" itemprop="datePublished">2018-10-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2018/10/10/Java线程池的使用说明/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/2018/10/10/Java线程池的使用说明/11.jpg)" alt="Java线程池的使用说明" class="thumbnail-image"></span>
     
     
 </a>
@@ -431,7 +464,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
